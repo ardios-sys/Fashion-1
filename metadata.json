@@ -1,0 +1,6 @@
+{
+  "name": "Zalemika Fashion uniform Order",
+  "description": "A professional uniform ordering system for Zalemika Fashion with elegant design, order summaries, and WhatsApp integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

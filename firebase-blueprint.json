@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "Order": {
+      "title": "Uniform Order",
+      "description": "An order for a uniform from Zalemika Fashion",
+      "type": "object",
+      "properties": {
+        "namaPemesan": { "type": "string" },
+        "namaGrup": { "type": "string" },
+        "whatsapp": { "type": "string" },
+        "email": { "type": "string" },
+        "alamatLengkap": { "type": "string" },
+        "kotaKabupaten": { "type": "string" },
+        "tanggalPemesanan": { "type": "string" },
+        "jenisSeragam": { "type": "array" },
+        "jenisSeragamLainnya": { "type": "string" },
+        "temaModel": { "type": "string" },
+        "modelLengan": { "type": "string" },
+        "modelKerah": { "type": "string" },
+        "modelRokCelana": { "type": "string" },
+        "catatanTambahan": { "type": "string" },
+        "fiturTambahan": { "type": "array" },
+        "referensiFoto": { "type": "array" },
+        "warnaUtama": { "type": "string" },
+        "warnaKombinasi": { "type": "string" },
+        "kodeWarna": { "type": "string" },
+        "bahan": { "type": "string" },
+        "bahanLainnya": { "type": "string" },
+        "jumlahDewasa": { "type": "number" },
+        "jumlahAnak": { "type": "number" },
+        "pilihanUkuran": { "type": "string" },
+        "dataUkuranCustom": { "type": "array" },
+        "tanggalDipakai": { "type": "string" },
+        "deadlineAcara": { "type": "string" },
+        "estimasiSelesai": { "type": "string" },
+        "pengiriman": { "type": "string" },
+        "alamatPengiriman": { "type": "string" },
+        "ekspedisi": { "type": "string" },
+        "catatanKurir": { "type": "string" },
+        "statusPembayaran": { "type": "string" },
+        "nominalPembayaran": { "type": "number" },
+        "metodePembayaran": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  },
+  "firestore": {
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Store individual uniform orders"
+    }
+  }
+}
